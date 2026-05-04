@@ -1,0 +1,11 @@
+{
+  "firstLocalMinimumTest": [
+    {
+      "values": [5, 4, 3, 2],
+      "reads": [100, 90, 89, 80],
+      "writes": [0, 0, 0, 0],
+      "comparisons": [0, 0, 5, 0],
+      "expected": 1
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "putBucketTest": [
+    {
+      "values": ["D", "F", "A"],
+      "expected": ["F", "A", "D"],
+      "position": [0, 0, 0]
+    },
+    {
+      "values": ["S", "H", "Y"],
+      "expected": ["H", "Y", "S"],
+      "position": [0, 0, 0]
+    }
+  ],
+  "multipleItemsTest": [
+    {
+      "values": ["D", "F", "A", "H"],
+      "expected": ["F", "H", "A", "D"],
+      "maxInputLength": 1
+    },
+    {
+      "values": ["FD", "DH", "FF"],
+      "expected": ["FF", "FD", "DH"],
+      "maxInputLength": 2
+    },
+    {
+      "values": ["DAY", "FHE", "SHY"],
+      "expected": ["FHE", "SHY", "DAY"],
+      "maxInputLength": 3
+    },
+    {
+      "values": ["HH", "HF", "HA"],
+      "expected": ["HF", "HH", "HA"],
+      "maxInputLength": 2
+    }
+  ],
+  "putBucketCallTest": [
+    {
+      "values": ["FH"],
+      "maxInputLength": 2
+    },
+    {
+      "values": ["FHE", "DAY", "SHY"],
+      "maxInputLength": 3
+    },
+    {
+      "values": ["FHEY", "DAYS", "SHDY", "HADE", "FYSD"],
+      "maxInputLength": 4
+    }
+  ],
+  "putBucketTest1": [
+    {
+      "value": "FHE",
+      "position": 0
+    },
+    {
+      "value": "DASD",
+      "position": 1
+    },
+    {
+      "value": "YFDH",
+      "position": 2
+    },
+    {
+      "value": "HEYA",
+      "position": 0
+    },
+    {
+      "value": "SFHD",
+      "position": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "validRuneTest": [
+    {"value": "FHE",   "position": 0, "expected": 2},
+    {"value": "FHE",   "position": 1, "expected": 1},
+    {"value": "FHE",   "position": 2, "expected": 0},
+    {"value": "DASD",  "position": 0, "expected": 6},
+    {"value": "DASD",  "position": 1, "expected": 5},
+    {"value": "DASD",  "position": 2, "expected": 4},
+    {"value": "DASD",  "position": 3, "expected": 6},
+    {"value": "YHEAF", "position": 0, "expected": 0},
+    {"value": "YHEAF", "position": 4, "expected": 3},
+    {"value": "S",     "position": 0, "expected": 5},
+    {"value": "A",     "position": 0, "expected": 4}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extractIndexTest": [
+    {"value": 123,  "position": 0, "radix": 10, "expected": 3},
+    {"value": 123,  "position": 1, "radix": 10, "expected": 2},
+    {"value": 123,  "position": 2, "radix": 10, "expected": 1},
+    {"value": 123,  "position": 3, "radix": 10, "expected": 0},
+    {"value": 7,    "position": 0, "radix": 10, "expected": 7},
+    {"value": 7,    "position": 1, "radix": 10, "expected": 0},
+    {"value": 9400, "position": 2, "radix": 10, "expected": 4},
+    {"value": 9400, "position": 5, "radix": 10, "expected": 0},
+    {"value": 1000, "position": 3, "radix": 10, "expected": 1},
+    {"value": 1000, "position": 4, "radix": 10, "expected": 0}
+  ]
+}
