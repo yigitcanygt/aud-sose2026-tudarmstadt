@@ -76,7 +76,7 @@ public class HybridSort<T> implements Sort<T> {
      * @param right The rightmost index of the list to be sorted.
      */
     public void quickSort(SortList<T> sortList, int left, int right) {
-        throw new UnsupportedOperationException("Not implemented yet"); //TODO H2 b): remove if implemented
+        quickSort(sortList, left, right, 0);
     }
 
     /**
@@ -90,7 +90,15 @@ public class HybridSort<T> implements Sort<T> {
      * @param depth The current recursion depth.
      */
     public void quickSort(SortList<T> sortList, int left, int right, int depth) {
-        throw new UnsupportedOperationException("Not implemented yet"); //TODO H2 b): remove if implemented
+        if (left < right) {
+            if (depth >= k) {
+                mergeSort(sortList, left, right);
+            } else {
+                int p = partition(sortList, left, right);
+                quickSort(sortList, left, p , depth + 1);
+                quickSort(sortList, p + 1, right, depth + 1);
+            }
+        }
     }
 
     /**
@@ -106,7 +114,20 @@ public class HybridSort<T> implements Sort<T> {
      * and all elements to the right of the index are greater than or equal to the pivot.
      */
     public int partition(SortList<T> sortList, int left, int right) {
-        throw new UnsupportedOperationException("Not implemented yet"); //TODO H2 b): remove if implemented
+        T pivot = sortList.get(left);
+        int p = left - 1;
+        int q = right + 1;
+
+        while (p < q) {
+            do { p++; } while (comparator.compare(sortList.get(p), pivot) < 0);
+            do { q--; } while (comparator.compare(sortList.get(q), pivot) > 0);
+            if (p < q) {
+                T tmp = sortList.get(p);
+                sortList.set(p, sortList.get(q));
+                sortList.set(q, tmp);
+            }
+        }
+        return q;
     }
 
     /**
@@ -119,7 +140,12 @@ public class HybridSort<T> implements Sort<T> {
      * @param right The rightmost index of the list to be sorted.
      */
     public void mergeSort(SortList<T> sortList, int left, int right) {
-        throw new UnsupportedOperationException("Not implemented yet"); //TODO H2 a): remove if implemented
+        if ( left < right) {
+            int middle = (left + right) / 2;
+            mergeSort(sortList, left, middle);
+            mergeSort(sortList, middle + 1, right);
+            merge(sortList, left, middle, right);
+        }
     }
 
     /**
@@ -133,6 +159,23 @@ public class HybridSort<T> implements Sort<T> {
      * @param right The rightmost index of the second sublist.
      */
     public void merge(SortList<T> sortList, int left, int middle, int right) {
-        throw new UnsupportedOperationException("Not implemented yet"); //TODO H2 a): remove if implemented
+        T[] temp = (T[]) new Object[right - left + 1];
+
+        int p = left;
+        int q = middle + 1;
+
+        for (int i = 0; i <= right - left; i++) {
+            if (q > right || (p <= middle && comparator.compare(sortList.get(p), sortList.get(q)) <= 0)) {
+                temp[i] = sortList.get(p);
+                p++;
+            } else {
+                temp[i] = sortList.get(q);
+                q++;
+            }
+        }
+
+        for (int i = 0; i <= right - left; i++) {
+            sortList.set(i + left, temp[i]);
+        }
     }
 }

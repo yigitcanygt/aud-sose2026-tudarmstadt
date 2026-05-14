@@ -1,4 +1,32 @@
-# Vorlage zu Hausübung 01
+\# Algorithms and Data Structures (AuD) - SoSe 26
 
-Beachten Sie die Hinweise zum Herunterladen, Importieren, Bearbeiten, Exportieren und Hochladen in unserem
-[Studierenden-Guide](https://wiki.tudalgo.org/). 
+
+
+This repository contains my solutions for the AuD course at \*\*TU Darmstadt\*\*.
+
+
+
+\## Technologies \& Concepts
+
+
+
+\- \*\*Java:\*\* Sorting Algorithms, Recursion, Divide \& Conquer
+
+\- \*\*Tools:\*\* IntelliJ IDEA, Gradle, JUnit 5, Git
+
+
+
+\## Weekly Progress
+
+
+
+\- \*\*P1 - Blatt 03:\*\* BubbleSort, WeirdlySort, HybridSort (QuickSort + MergeSort), RadixSort
+
+
+
+\## About
+
+
+
+Weekly Java assignments from the Algorithms and Data Structures (AuD) course at TU Darmstadt (SoSe 26).
+
