@@ -1,48 +1,25 @@
-\# 🔢 Algorithms \& Data Structures (AuD) - SoSe 26
+# 🔢 Algorithms & Data Structures (AuD) - SoSe 26
 
+This repository contains my solutions for the AuD course at **TU Darmstadt**.
+It tracks my journey through classic and hybrid sorting algorithms, divide & conquer strategies, and non-comparison-based sorting.
 
-
-A comprehensive collection of weekly Java assignments from the \*\*Algorithms and Data Structures (AuD)\*\* course at TU Darmstadt (SoSe 26).
-
-
-
-\## 📦 Assignments Overview
-
-
+## 📦 Assignments Overview
 
 | Assignment | Topic | Description |
-
 |---|---|---|
+| **P1 - Blatt 03** | Sorting Algorithms | Implemented BubbleSort and a bidirectional variant (WeirdlySort / Cocktail Shaker Sort). Built a HybridSort combining QuickSort with a MergeSort fallback at a configurable recursion depth k, and an optimizer to find the best k. Also implemented RadixSort for both rune-encoded strings and integers. |
 
-| \*\*P1 - Blatt 03\*\* | Sorting Algorithms | BubbleSort, WeirdlySort (Cocktail Shaker), HybridSort (QuickSort + MergeSort fallback), RadixSort |
+## 🛠️ Core Concepts
 
+- **Divide & Conquer:** MergeSort, QuickSort (Hoare partitioning)
+- **Hybrid Algorithms:** QuickSort with MergeSort fallback based on recursion depth
+- **Non-comparison Sorting:** RadixSort with custom alphabet (rune order)
+- **Algorithm Analysis:** Master Theorem, stability of sorting algorithms
 
-
-\## 🛠️ Technologies \& Skills
-
-
-
-\- \*\*Language:\*\* Java
-
-\- \*\*Core Concepts:\*\* Divide \& Conquer, Recursion, Stability of Sorting Algorithms, Master Theorem
-
-\- \*\*Algorithms:\*\* InsertionSort, BubbleSort, MergeSort, QuickSort, RadixSort
-
-\- \*\*Tools:\*\* IntelliJ IDEA, Gradle, JUnit 5, Git
-
-
-
-\## ⚙️ How to Run
-
-
+## ⚙️ How to Run
 
 ```bash
-
-./gradlew run        # Run main
-
-./gradlew test       # Run tests
-
+./gradlew run                  # Run main
+./gradlew test                 # Run tests
 ./gradlew mainBuildSubmission  # Build submission jar
-
 ```
-
