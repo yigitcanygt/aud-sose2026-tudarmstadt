@@ -22,11 +22,3 @@ This repository contains my solutions for the AuD course at \*\*TU Darmstadt\*\*
 
 \- \*\*P1 - Blatt 03:\*\* BubbleSort, WeirdlySort, HybridSort (QuickSort + MergeSort), RadixSort
 
-
-
-\## About
-
-
-
-Weekly Java assignments from the Algorithms and Data Structures (AuD) course at TU Darmstadt (SoSe 26).
-
