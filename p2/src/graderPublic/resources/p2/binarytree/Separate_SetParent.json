@@ -1,0 +1,24 @@
+[
+  {
+    "RBTree": "[[[,2,B,],3,R,[,4,B,]],5,B,[[,6,B,],7,R,[,8,B,]]]",
+    "joinKey": 3,
+    "expectedFirstTree": "[,2,B,]",
+    "expectedSecondTree": "[[,4,B,],5,B,[,6,R,]]",
+    "rightParentValue": 5
+  },
+  {
+    "RBTree": "[[[,35,B,],40,R,[,45,B,]],50,B,[,60,B,]]",
+    "joinKey": 40,
+    "expectedFirstTree": "[,35,B,]",
+    "expectedSecondTree": "[[,45,B,],50,B,[,60,B,]]",
+    "rightParentValue": 50
+
+  },
+  {
+    "RBTree": "[[[,10,B,],20,R,[,30,B,[,35,R,]]],40,B,[[,55,B,[,56,R,]],60,R,[,69,B,]]]",
+    "joinKey": 20,
+    "expectedFirstTree": "[,10,B,]",
+    "expectedSecondTree": "[[,30,B,[,35,R,]],40,B,[[,55,B,[,56,R,]],60,R,[,69,B,]]]",
+    "rightParentValue": 40
+  }
+]

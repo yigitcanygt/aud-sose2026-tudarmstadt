@@ -1,0 +1,22 @@
+[
+  {
+    "RBTree": "[[,10,B,],20,B,[[,25,R,],30,B,]]",
+    "nodeKey": 20,
+    "expectedKey": 25
+  },
+  {
+    "RBTree": "[,10,B,]",
+    "nodeKey": 10,
+    "expectedKey": null
+  },
+  {
+    "RBTree": "[[,10,B,],20,R,]",
+    "nodeKey": 20,
+    "expectedKey": 10
+  },
+  {
+    "RBTree": "[,20,B,[,30,R,]]",
+    "nodeKey": 20,
+    "expectedKey": 30
+  }
+]

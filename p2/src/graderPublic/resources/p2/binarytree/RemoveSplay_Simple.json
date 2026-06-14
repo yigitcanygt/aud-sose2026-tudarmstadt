@@ -1,0 +1,27 @@
+[
+  {
+    "splayTree": "[,42,]",
+    "removeKey": 42,
+    "expectedSplayTree": "[]"
+  },
+  {
+    "splayTree": "[,10,[,20,[,30,]]]",
+    "removeKey": 10,
+    "expectedSplayTree": "[,20,[,30,]]"
+  },
+  {
+    "splayTree": "[[,10,],20,[,30,]]",
+    "removeKey": 10,
+    "expectedSplayTree": "[,20,[,30,]]"
+  },
+  {
+    "splayTree": "[[,10,],20,[,30,]]",
+    "removeKey": 30,
+    "expectedSplayTree": "[[,10,],20,]"
+  },
+  {
+    "splayTree": "[[[,10,],20,[,25,]],30,[,40,]]",
+    "removeKey": 99,
+    "expectedSplayTree": "[[[[,10,],20,[,25,]],30,],40,]"
+  }
+]

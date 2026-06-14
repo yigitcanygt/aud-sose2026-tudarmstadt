@@ -1,0 +1,22 @@
+[
+  {
+    "splayTree": "[[,5,],10,[,20,]]",
+    "nodeKey": 20,
+    "expectedSplayTree": "[[[,5,],10,],20,]"
+  },
+  {
+    "splayTree": "[[,10,],20,[,30,]]",
+    "nodeKey": 10,
+    "expectedSplayTree": "[,10,[,20,[,30,]]]"
+  },
+  {
+    "splayTree": "[[,10,],20,[,30,]]",
+    "nodeKey": 20,
+    "expectedSplayTree": "[[,10,],20,[,30,]]"
+  },
+  {
+    "splayTree": "[,5,[,10,]]",
+    "nodeKey": 10,
+    "expectedSplayTree": "[[,5,],10,]"
+  }
+]

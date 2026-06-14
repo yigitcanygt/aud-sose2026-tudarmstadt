@@ -1,0 +1,17 @@
+[
+  {
+  "bst": "[]",
+  "postorderList": [1, 7, 5, 50, 40, 10],
+  "expectedBST": "[[[,1,],5,[,7,]],10,[,40,[,50,]]]"
+  },
+  {
+    "bst": "[]",
+    "postorderList": [],
+    "expectedBST": "[]"
+  },
+  {
+    "bst": "[]",
+    "postorderList": [1],
+    "expectedBST": "[,1,]"
+  }
+]

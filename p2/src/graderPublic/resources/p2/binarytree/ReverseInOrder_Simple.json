@@ -1,0 +1,17 @@
+[
+  {
+    "bst": "[,1,]",
+    "RBTree": "[,1,B,]",
+    "startNode": 1,
+    "max": 100,
+    "expectedList": [1],
+    "limit": 0
+  },
+  {
+    "bst": "[,1,[,2,[,3,]]]",
+    "startNode": 1,
+    "max": 100,
+    "expectedList": [3,2,1],
+    "limit": 0
+  }
+]
